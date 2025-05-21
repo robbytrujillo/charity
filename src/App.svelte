@@ -1,15 +1,25 @@
 <script>
+	import CharityList from "./CharityList.svelte";
+
 	let title = "Charity";
 	setTimeout(function () {
 		title = "Donation";
 	}, 2000);
 </script>
 
-<h1>{title}</h1>
-
 <style>
 h1 {
-	fonst-size: 3em;
+	font-size: 3em;
 	color: #e2071c;
 }	
+
+:global(div) {
+	border: 0.5em solid #1a1a1a;
+	padding: 1em;
+}
 </style>
+
+<div>
+	<h1>{title}</h1>
+	<CharityList />
+</div>
