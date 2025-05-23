@@ -1,6 +1,35 @@
 <script>
     export let charities;
+
+    function calculateFunded(pledged, target) {
+        return Math.round((1 / (target / pledged)) * 100)
+    }
+
+    function formatCurrency(nominal) {
+        return nominal.toLocaleString('id-ID', { 
+            style: 'currency', 
+            currency: 'IDR' 
+        })
+    }
+
+    function calculateDaysRemaining(date_end) {
+        const delta = date_end - new Date();
+
+        const oneDay = 24 * 60 * 60 * 1000;
+
+        return Math.round(Math.abs(delta / oneDay));
+    }
 </script>
+
+<style>
+    .xs-list-with-content {
+        font-size: 8px;
+    }
+
+    .number-percentage-count number-percentage {
+        font-size: 8px;
+    }
+</style>
 
 <!-- popularCauses section -->
 <section id="popularcause" class="bg-gray waypoint-tigger xs-section-padding">
@@ -69,7 +98,7 @@
                                 <div class="xs-skill-bar">
                                     <div class="xs-skill-track">
                                         <p><span class="number-percentage-count number-percentage" data-value="90"
-                                                data-animation-duration="3500">{charity.pledged}</span>%</p>
+                                                data-animation-duration="3500">{calculateFunded(charity.pledged, charity.target)}</span>%</p>
                                     </div>
                                 </div>
                             </div><!-- .xs-item-header END -->
@@ -81,10 +110,10 @@
                                 <a href="#" class="xs-post-title xs-mb-30">{charity.title}</a>
 
                                 <ul class="xs-list-with-content">
-                                    <li>{charity.pledged}<span>Pledged</span></li>
+                                    <li>{formatCurrency(charity.pledged)}<span>Pledged</span></li>
                                     <li><span class="number-percentage-count number-percentage" data-value="90"
-                                            data-animation-duration="3500">{charity.pledged}</span>% <span>Funded</span></li>
-                                    <li>{charity.date_end}<span>Days to go</span></li>
+                                            data-animation-duration="3500">{calculateFunded(charity.pledged, charity.target)}</span>% <span>Funded</span></li>
+                                    <li>{calculateDaysRemaining(charity.date_end)}<span>Days to go</span></li>
                                 </ul>
 
                                 <span class="xs-separetor"></span>
