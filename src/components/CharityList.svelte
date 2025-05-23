@@ -64,38 +64,37 @@
                         <div class="xs-popular-item xs-box-shadow">
                             <div class="xs-item-header">
 
-                                <img src="assets/images/causes/causes_4.png" alt="">
+                                <img src="{charity.thumbnail}" alt="">
 
                                 <div class="xs-skill-bar">
                                     <div class="xs-skill-track">
                                         <p><span class="number-percentage-count number-percentage" data-value="90"
-                                                data-animation-duration="3500">0</span>%</p>
+                                                data-animation-duration="3500">{charity.pledged}</span>%</p>
                                     </div>
                                 </div>
                             </div><!-- .xs-item-header END -->
                             <div class="xs-item-content">
                                 <ul class="xs-simple-tag xs-mb-20">
-                                    <li><a href="">Food</a></li>
+                                    <li><a href="">{charity.category}</a></li>
                                 </ul>
 
-                                <a href="#" class="xs-post-title xs-mb-30">Splash Drone 3 a Fully Waterproof Drone that
-                                    floats</a>
+                                <a href="#" class="xs-post-title xs-mb-30">{charity.title}</a>
 
                                 <ul class="xs-list-with-content">
-                                    <li>$67,000<span>Pledged</span></li>
+                                    <li>{charity.pledged}<span>Pledged</span></li>
                                     <li><span class="number-percentage-count number-percentage" data-value="90"
-                                            data-animation-duration="3500">0</span>% <span>Funded</span></li>
-                                    <li>3<span>Days to go</span></li>
+                                            data-animation-duration="3500">{charity.pledged}</span>% <span>Funded</span></li>
+                                    <li>{charity.date_end}<span>Days to go</span></li>
                                 </ul>
 
                                 <span class="xs-separetor"></span>
 
                                 <div class="row xs-margin-0">
                                     <div class="xs-round-avatar">
-                                        <img src="assets/images/avatar/avatar_1.jpg" alt="">
+                                        <img src="{charity.profile_photo}" alt="">
                                     </div>
                                     <div class="xs-avatar-title">
-                                        <a href="#"><span>By</span>Ema Watson</a>
+                                        <a href="#"><span>By</span>{charity.profile_name}</a>
                                     </div>
                                 </div>
 
