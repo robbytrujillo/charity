@@ -44,7 +44,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="xs-copyright-text">
-							<p>&copy; Copyright 2018 Charity.</a> - All Right's Reserved</p>
+							<p>&copy; Copyright 2018 Charity. - All Right's Reserved</p>
 						</div>
 					</div>
 					<div class="col-md-6">

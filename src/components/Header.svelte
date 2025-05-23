@@ -10,9 +10,9 @@
 				</div><!-- .nav-header END -->
 				<div class="nav-menus-wrapper row">
 					<div class="xs-logo-wraper col-lg-2 xs-padding-0">
-						<a class="nav-brand" href="index.html">
+						<!-- <a class="nav-brand" href="index.html">
 							<img src="assets/images/logo.png" alt="">
-						</a>
+						</a> -->
 					</div><!-- .xs-logo-wraper END -->
 					<div class="col-lg-7">
 						<ul class="nav-menu">
