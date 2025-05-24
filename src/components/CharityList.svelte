@@ -3,6 +3,8 @@
 
     export let charities;
 
+    let isModalOpen = false;
+
     function calculateFunded(pledged, target) {
         return Math.round((1 / (target / pledged)) * 100)
     }
@@ -20,6 +22,11 @@
         const oneDay = 24 * 60 * 60 * 1000;
 
         return Math.round(Math.abs(delta / oneDay));
+    }
+
+    function handleButton() {
+        // console.log('Button click')
+        isModalOpen = true;
     }
 </script>
 
@@ -51,7 +58,10 @@
                     <div class="col-lg-4 col-md-6">
                         <!-- modal goes here -->
                         <!-- Modal -->
+                         {#if isModalOpen === true}
                         <Modal>
+                            <h1>Ini adalah Modal</h1>
+
                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
@@ -88,6 +98,7 @@
                                 </div>
                             </div>
                         </Modal>
+                        {/if}
                         
                         <div class="xs-popular-item xs-box-shadow">
                             <div class="xs-item-header">
@@ -128,10 +139,10 @@
 
                                 <span class="xs-separetor"></span>
 
-                                <a href="#" data-toggle="modal" data-target="#exampleModal"
+                                <button on:click={handleButton} data-toggle="modal" data-target="#exampleModal"
                                     class="btn btn-primary btn-block">
                                     Donate This Cause
-                                </a>
+                                </button>
                             </div><!-- .xs-item-content END -->
                         </div><!-- .xs-popular-item END -->
                     </div>
