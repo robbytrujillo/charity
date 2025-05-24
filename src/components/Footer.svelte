@@ -30,10 +30,10 @@
 					<div class="col-lg-4 col-md-6 footer-widget">
 						<h3 class="widget-title">Contact Us</h3>
 						<ul class="xs-info-list">
-							<li><i class="fa fa-home"></i>Sector # 48, 123 Street, miosya road VIC 28, Australia.</li>
-							<li><i class="fa fa-phone"></i>(800) 123.456.7890 (800) 123.456.7890 +00 99 88 5647</li>
+							<li><i class="fa fa-home"></i>Jl. Matraman Raya, Kb. Manggis, Kec. Matraman, Jakarta 13150</li>
+							<li><i class="fa fa-phone"></i>081111111111</li>
 							<li><i class="fa fa-envelope-o"></i><a
-									href="mailto:yourname@domain.com">yourname@domain.com</a></li>
+									href="mailto:admin@charity.com">admin@charity.com</a></li>
 						</ul><!-- .xs-list-with-icon END -->
 					</div>
 				</div>
@@ -44,7 +44,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="xs-copyright-text">
-							<p>&copy; Copyright 2018 Charity. - All Right's Reserved</p>
+							<p>&copy; Copyright 2025 Charity. - All Right's Reserved</p>
 						</div>
 					</div>
 					<div class="col-md-6">
