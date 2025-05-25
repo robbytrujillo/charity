@@ -28,6 +28,10 @@
         // console.log('Button click')
         isModalOpen = true;
     }
+
+    function handleCloseModal() {
+        isModalOpen = false;
+    }
 </script>
 
 <style>
@@ -41,7 +45,7 @@
 
     .show {
         display: block;
-        background-color: rgba (0, 0, 0, 0.2);
+        background-color: rgba (0, 0, 0, 0.45);
     }
 </style>
 
@@ -71,8 +75,8 @@
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Splash Drone 3 a Fully Waterproof Drone that floats</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <h5 class="modal-title" id="exampleModalLabel">{charity.title}</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" on:click={handleCloseModal}>
                                             <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
