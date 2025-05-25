@@ -38,6 +38,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+	
+
 
 	<!-- <link rel='stylesheet' href='/global.css'> -->
 	<!-- <link rel='stylesheet' href='/build/bundle.css'> -->
@@ -50,12 +54,23 @@
 
 	<div id="root"></div>
 
+	<!-- 1. jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<!-- 2. Plugin jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+	<!-- 3. Bootstrap Bundle (popper.js included) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- 4. Script kamu -->
 	<script src="assets/js/main.js"></script>
+
+	<!-- 5. Smooth scroll -->
 	<script>
 		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 			anchor.addEventListener('click', function (e) {
 				e.preventDefault();
-
 				document.querySelector(this.getAttribute('href')).scrollIntoView({
 					behavior: 'smooth'
 				});
@@ -63,22 +78,18 @@
 		});
 	</script>
 
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+	<!-- 6. Inisialisasi OwlCarousel -->
 	<script>
-		$(document).ready(function(){
+		$(document).ready(function () {
 			$(".xs-banner-slider").owlCarousel({
-			items: 1,
-			loop: true,
-			autoplay: true,
-			autoplayTimeout: 5000,
-			nav: false,
-			dots: true
+				items: 1,
+				loop: true,
+				autoplay: true,
+				autoplayTimeout: 5000,
+				nav: false,
+				dots: true
 			});
 		});
 	</script>
-
-
 </body>
 </html>

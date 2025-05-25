@@ -35,12 +35,13 @@
         font-size: 8px;
     }
 
-    .number-percentage-count number-percentage {
+    /* .number-percentage-count number-percentage {
         font-size: 8px;
-    }
+    } */
 
     .show {
         display: block;
+        background-color: rgba (0, 0, 0, 0.2);
     }
 </style>
 
