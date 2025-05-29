@@ -1,5 +1,5 @@
 <script>
-	// install page.js
+	// install routing page.js
 	import router from "page";
 
 	import Home from "./pages/Home.svelte";
