@@ -1,3 +1,10 @@
+<script>
+    import Header from "../components/Header.svelte";
+    import Footer from "../components/Footer.svelte";
+</script>
+
+<Header />
+
 <!-- welcome section -->
 	<!--breadcumb start here-->
 	<section class="xs-banner-inner-section parallax-window" style="background-image:url('/assets/images/about_bg.png')">
@@ -73,3 +80,5 @@
         </div><!-- .container end -->
 	</section><!-- End donation form section -->
 	</main><!-- footer section start -->
+
+    <Footer />
