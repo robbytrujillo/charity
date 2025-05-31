@@ -7,7 +7,7 @@
 
 <!-- welcome section -->
 	<!--breadcumb start here-->
-	<section class="xs-banner-inner-section parallax-window" style="background-image:url('/assets/images/about_bg.png')">
+	<section class="xs-banner-inner-section parallax-window" style="background-image:url('/assets/images/about-bg.jpg')">
         <div class="xs-black-overlay"></div>
         <div class="container">
             <div class="color-white xs-inner-banner-content">
@@ -33,21 +33,21 @@
                 <div class="col-lg-6">
                     <div class="xs-donation-form-wraper">
                         <div class="xs-heading xs-mb-30">
-                        <h2 class="xs-title">Make a donation</h2>
-                        <p class="small">To learn more about make donate charity
-                        with us visit our "<span class="color-green">Contact
-                        us</span>" site. By calling <span class=
-                        "color-green">+44(0) 800 883 8450</span>.</p><span class=
-                        "xs-separetor v2"></span>
+                            <h2 class="xs-title">Make a donation</h2>
+                            <p class="small">To learn more about make donate charity
+                                with us visit our "<span class="color-green">Contact
+                                us</span>" site. By calling <span class=
+                                "color-green">+44(0) 800 883 8450</span>.</p><span class=
+                                "xs-separetor v2"></span>
                         </div><!-- .xs-heading end -->
-                        <form action="#" method="post" id="xs-donation-form" class=
-                        "xs-donation-form" name="xs-donation-form">
-                        <div class="xs-input-group">
-                        <label for="xs-donate-name">Donation Amount <span class=
-                        "color-light-red">**</span></label> <input type="text"
-                        name="name" id="xs-donate-name" class="form-control"
-                        placeholder="Minimum of $5">
-                        </div><!-- .xs-input-group END -->
+
+                        <form action="#" method="post" id="xs-donation-form" class="xs-donation-form" name="xs-donation-form">
+                            <div class="xs-input-group">
+                            <label for="xs-donate-name">Donation Amount <span class=
+                            "color-light-red">**</span></label> <input type="text"
+                            name="name" id="xs-donate-name" class="form-control"
+                            placeholder="Minimum of $5">
+                            </div><!-- .xs-input-group END -->
                         <div class="xs-input-group">
                         <label for="xs-donate-charity">List of Evaluated Charities
                         <span class="color-light-red">**</span></label>
