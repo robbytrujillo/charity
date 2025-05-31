@@ -1,6 +1,6 @@
 <!-- welcome section -->
 	<!--breadcumb start here-->
-	<section class="xs-banner-inner-section parallax-window" style="background-image:url('assets/images/backgrounds/about_bg.jpg')">
+	<section class="xs-banner-inner-section parallax-window" style="background-image:url('/assets/images/about_bg.png')">
         <div class="xs-black-overlay"></div>
         <div class="container">
             <div class="color-white xs-inner-banner-content">
@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="xs-donation-form-images"><img src=
-                    "assets/images/family.jpg" class="img-responsive" alt="Family Images"></div>
+                    "/assets/images/family-gaza.jpg" class="img-responsive" alt="Family Images"></div>
                 </div>
                 <div class="col-lg-6">
                     <div class="xs-donation-form-wraper">
