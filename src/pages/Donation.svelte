@@ -48,31 +48,27 @@
                             name="name" id="xs-donate-name" class="form-control"
                             placeholder="Minimum of $5">
                             </div><!-- .xs-input-group END -->
-                        <div class="xs-input-group">
-                        <label for="xs-donate-charity">List of Evaluated Charities
-                        <span class="color-light-red">**</span></label>
-                        <select name="charity-name" id="xs-donate-charity" class=
-                        "form-control">
-                        <option value="">
-                        Select
-                        </option>
-                        <option value="amarokSocity">
-                        Amarok socity
-                        </option>
-                        <option value="amarokSocity">
-                        Amarok socity
-                        </option>
-                        <option value="amarokSocity">
-                        Amarok socity
-                        </option>
-                        <option value="amarokSocity">
-                        Amarok socity
-                        </option>
-                        </select>
-                        </div><!-- .xs-input-group END -->
-                        <button type="submit" class="btn btn-warning"><span class=
-                        "badge"><i class="fa fa-heart"></i></span> Donate
-                        now</button>
+                            <div class="xs-input-group">
+                                <label for="xs-donate-name">Your name 
+                                    <span class=color-light-red>**</span>
+                                </label>
+                                <input type="text" name="name" id="xs-donate-name" class="form-control" placeholder="Your Awesome Name">
+                            </div>
+                            <div class="xs-input-group">
+                                <label for="xs-donate-email">Your Email 
+                                    <span class=color-light-red>**</span>
+                                </label>
+                                <input type="email" name="email" id="xs-donate-email" class="form-control" placeholder="email@charity.com">
+                            </div>
+                            <div class="xs-input-group" id="xs-input-checkbox">
+                                <input type="checkbox" name="agree" id="xs-donate-agree">
+                                <label for="xs-donate-agree">I Agree
+                                    <span class="color-light-red">**</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-warning"><span class=
+                            "badge"><i class="fa fa-heart"></i></span> Donate
+                            now</button>
                         </form><!-- .xs-donation-form #xs-donation-form END -->
                     </div>
                 </div>
