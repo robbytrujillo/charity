@@ -3,6 +3,22 @@
     import Footer from "../components/Footer.svelte";
 </script>
 
+<style>
+    #xs-input-checkbox {
+        display: flex;
+        align-items: center;;
+    }
+
+    #xs-donate-agree {
+        /* margin-left: 10px; */
+        width: 35px;
+    }
+
+    label[for="xs-donate-agree"] {
+        margin: 0px;
+    }
+</style>
+
 <Header />
 
 <!-- welcome section -->
